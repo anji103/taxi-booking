@@ -217,3 +217,20 @@
   </prerequisites>
 
 </project>
+<project>
+  ...
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>11</source>  <!-- Change this to 8 or later -->
+          <target>11</target>  <!-- Change this to match source -->
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  ...
+</project>
